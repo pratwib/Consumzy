@@ -1,6 +1,51 @@
 <resources>
     <string name="app_name">Consumzy</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <string name="home">Home</string>
+    <string name="scan">Scan</string>
+    <string name="profile">Profile</string>
+    <string name="sort">Sort</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+
+    <string name="food_name">Food Name</string>
+    <string name="food_qty">Qty</string>
+    <string name="food_expired">Expired Date</string>
+    <string name="food_days_left">days left</string>
+
+    <string name="category_color">Category Color</string>
+
+    <string name="title_add_food">Add Food</string>
+    <string name="title_food_name">Name</string>
+    <string name="hint_food_name">Your food name..</string>
+    <string name="title_food_qty">Quantity</string>
+    <string name="hint_food_qty">Your food quantity..</string>
+    <string name="hint_dropdown_unit">Select Unit</string>
+    <string name="title_food_category">Category</string>
+    <string name="hint_dropdown_category">Select Category</string>
+    <string name="title_food_expired">Expired Date</string>
+    <string name="hint_food_expired">Your food expired date..</string>
+    <string name="title_food_place">Place</string>
+    <string name="hint_food_place">Your food are placed in..</string>
+    <string name="add_food">Add Food</string>
+    <string name="edit_food">Edit Food</string>
+    <string name="insert_image">Insert Image</string>
+    <string name="scan_food">Scan Food</string>
+    <string name="take_photo">Take a Photo</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="delete">Delete</string>
+    <string name="take_picture">Take a Picture</string>
+    <string name="rotate_camera">Rotate Camera</string>
+    <string name="profile_name">Guest</string>
+    <string name="profile_account">My Account</string>
+    <string name="profile_summary">My Summary</string>
+    <string name="profile_category">My Category</string>
+    <string name="logout">Logout</string>
+    <string name="delete_category">Delete Category</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="category_name">Category Name</string>
+    <string name="result_image">Result_Image</string>
+    <string name="result_name">% Result Name</string>
+    <string name="result_expired">Result Expired</string>
+
 </resources>

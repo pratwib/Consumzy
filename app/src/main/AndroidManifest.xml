@@ -2,20 +2,70 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_consumzy"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_consumzy_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Consumzy"
+        android:theme="@style/Theme.Consumzy2"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.profile.AccountActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.profile.ProfileActivity" />
+        <activity
+            android:name=".ui.scan.ResultActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.scan.ScanActivity" />
+        <activity
+            android:name=".ui.profile.CategoryActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.profile.ProfileActivity" />
+        <activity
+            android:name=".ui.profile.SummaryActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.profile.ProfileActivity" />
+        <activity
+            android:name=".ui.scan.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.EditFoodActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.home.HomeActivity" />
+        <activity
+            android:name=".ui.home.AddFoodActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.home.HomeActivity" />
+        <activity
+            android:name=".ui.home.SearchActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.home.HomeActivity" />
+        <activity
+            android:name=".ui.scan.ScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
